@@ -132,10 +132,39 @@ ol {
 
 /* Utility Css End */
 
+/* header css start */
+
+.site_logo {
+    width: 74px;
+    display: inline-block;
+}
+
+.site_logo img {
+    display: block;
+}
+
+.header-area {
+    padding: 20px 0;
+    background-color: #EAF1F7;
+}
+
+.toggle-bar {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.toggle-bar svg {
+    width: 30px;
+}
+
+/* header css end */
+
 /* product-area css start */
 .product-area {
     background-color: #EAF1F7;
-    padding: 120px 0;
+    padding: 20px 0;
     padding-bottom: 110px;
 }
 
@@ -144,6 +173,7 @@ ol {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     text-align: center;
+    margin-bottom: 110px;
 }
 
 .sm-img img {
@@ -160,7 +190,8 @@ ol {
 .detail-list li h4,
 .ingredients-masterbox p,
 .pd-view-content h1,
-.pd-view-content h5 {
+.pd-view-content h5,
+.sm-product .sm-content h6 {
     font-family: trajanProRegular;
 }
 
@@ -289,8 +320,12 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 6px;
+    padding-top: 9px;
     position: relative;
+}
+
+.splide__arrows .splide__arrow.splide__arrow--prev {
+    transform: rotateZ(180deg);
 }
 
 .splide__arrows .splide__arrow svg {
@@ -328,6 +363,71 @@ ol {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 
+}
+
+.sm-product .sm-content h6 {
+    color: #193a83;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.sm-product .sm-content h6::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    background-color: #6384b5;
+    width: 0%;
+    height: 1px;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sm-product:hover .sm-content h6::after {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sm-product {
+    text-decoration: none;
+    text-align: center;
+    transition: all .3s;
+}
+
+.pd-status {
+    font-size: 20px;
+    display: block;
+    line-height: 30px;
+    color: #2aacf0;
+}
+
+.sm-img {
+    margin-bottom: 24px;
+}
+
+.ingridients-wrapper h4 {
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.ingridients-wrapper h4::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 1px;
+    opacity: 0.2;
+    background-color: #004b99;
 }
 
 /* product-area css end */
