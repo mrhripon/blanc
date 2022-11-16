@@ -434,7 +434,8 @@ ol {
 
 
 /* details-area css start */
-.details-area {
+.details-area,
+.post-contact-area {
     padding: 100px 0;
     background-size: cover;
     background-position: center;
@@ -488,6 +489,30 @@ ol {
 }
 
 /* details-area css end */
+
+
+/* post-contact-area css start */
+.post-contact-area {
+    padding: 100px 0;
+}
+
+.post-contact-g-wrapper {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    grid-gap: 24px;
+}
+
+.post-part {
+    background-color: #fff;
+    padding: 24px;
+}
+
+.contact-part {
+    background-color: #fff;
+    padding: 24px;
+}
+
+/* post-contact-area css end */
 
 
 /* footer css start */
