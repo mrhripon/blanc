@@ -13,6 +13,4 @@ document.addEventListener('DOMContentLoaded', () => {
         arrowPath: 'M38.7 10.6H0M0 9.6h38.7v2H0z M29.4 21.4L27.9 20l9.4-9.3-9.4-9.3L29.4 0l10.7 10.7z'
     });
     productCarousel.mount();
-
-    console.log(productCarousel)
 })
